@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>UNO: Ultra Spectrum Rules</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    background: #fafafa;
-    color: #222;
-    line-height: 1.6;
-  }
-  h1, h2 {
-    color: #c41e3a;
-    margin-bottom: 0.3rem;
-  }
-  h1 {
-    border-bottom: 3px solid #c41e3a;
-    padding-bottom: 0.5rem;
-  }
-  h2 {
-    margin-top: 2rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.3rem;
-  }
-  p {
-    margin: 0.8rem 0;
-  }
-  ul {
-    margin-left: 1.2rem;
-  }
-  li {
-    margin: 0.3rem 0;
-  }
-  .colors-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    margin: 0.3rem 0 1rem 0;
-  }
-  .color-chip {
-    padding: 0.3rem 0.8rem;
-    border-radius: 12px;
-    color: white;
-    font-weight: 600;
-    font-size: 0.9rem;
-    user-select: none;
-  }
-  .red { background: #e03c31; }
-  .orange { background: #f58220; }
-  .yellow { background: #f9d71c; color: #222; }
-  .green { background: #3a9a35; }
-  .teal { background: #009688; }
-  .blue { background: #1976d2; }
-  .purple { background: #7b1fa2; }
-  .pink { background: #d81b60; }
-
-  @media print {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNO: Ultra Spectrum Rules</title>
+  <style>
     body {
-      max-width: none;
-      margin: 0.5in;
-      background: white;
-      color: black;
+      font-family: 'Segoe UI', sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: #fefefe;
+      color: #2c2c2c;
+      line-height: 1.6;
     }
+
     h1, h2 {
-      color: black;
-      border-color: black;
+      color: #b22222;
+      margin-bottom: 0.3rem;
     }
+
+    h1 {
+      border-bottom: 3px solid #b22222;
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    li {
+      margin: 0.3rem 0;
+    }
+
+    .colors-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      margin: 0.3rem 0 1rem 0;
+    }
+
     .color-chip {
-      color: black !important;
-      background: none !important;
-      border: 1px solid black;
+      padding: 0.3rem 0.8rem;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: white;
+      user-select: none;
     }
-  }
-</style>
+
+    .red { background: #e03c31; }
+    .orange { background: #f58220; }
+    .yellow { background: #f9d71c; color: #222; }
+    .green { background: #3a9a35; }
+    .teal { background: #009688; }
+    .blue { background: #1976d2; }
+    .purple { background: #7b1fa2; }
+    .pink { background: #d81b60; }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body {
+        background: white;
+        color: #2c2c2c;
+      }
+
+      .color-chip {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -84,23 +89,23 @@
 <p><em>A fork of the UNO: Full Spectrum variant</em></p>
 
 <h2>1. Overview</h2>
-<p>UNO: Ultra Spectrum builds upon the Full Spectrum version by combining multiple UNO decks and expansion packs. With added colors, new rules, and special cards, this chaotic variant takes the classic game to an entirely new level.</p>
+<p>UNO: Ultra Spectrum builds on the Full Spectrum fork by combining multiple decks and extra rules into one massive spectrum of Kullas (colors). It includes many expansions and custom mechanics for a wild experience.</p>
 
-<h2>2. Required Decks and Cards</h2>
+<h2>2. Required Cards</h2>
 <ul>
-  <li>Standard UNO colors: Red, Blue, Green, Yellow</li>
-  <li>Extra spectrum: Orange, Purple (Neo-Partisan), Pink (Susan G. Komen), Teal (UNO Flip Express)</li>
-  <li>Expansion cards: Swap Pack, Reverse Pack, Show No Mercy (+6 and +10)</li>
+  <li>Standard UNO: Red, Yellow, Green, Blue</li>
+  <li>Full Spectrum: Orange, Purple (Neo), Pink (Susan), Teal (UNO Flip)</li>
+  <li>Extra packs: Swap Hands, Reverse Pack, Show No Mercy (+6, +10)</li>
 </ul>
 
 <h2>3. Starting the Game</h2>
 <ul>
-  <li><strong>Deal 10 cards</strong> to each player instead of 7 because of the many colors ("too many Kullas").</li>
-  <li>Place one card from the draw pile face-up to start the discard pile. The game begins from there.</li>
+  <li>Each player is dealt <strong>10 cards</strong> instead of 7 because of the many Kullas.</li>
+  <li>One card from the draw pile starts the game. Match by color or number.</li>
 </ul>
 
-<h2>4. Colors in Play</h2>
-<p>The official colors in the Ultra Spectrum deck are:</p>
+<h2>4. All Kullas (Colors)</h2>
+<p>The playable Kullas in Ultra Spectrum UNO:</p>
 <div class="colors-list">
   <span class="color-chip red">Red</span>
   <span class="color-chip orange">Orange</span>
@@ -112,43 +117,43 @@
   <span class="color-chip pink">Pink</span>
 </div>
 
-<h2>5. Basic Rules (UNO Refresher)</h2>
+<h2>5. Standard UNO Rules</h2>
 <ul>
-  <li>Players take turns matching the top card of the discard pile by either color or number.</li>
-  <li>If a player cannot play, they must draw one card. If they can play it, they may do so immediately.</li>
-  <li>Action cards (Reverse, Skip, Draw Two, Wild, etc.) behave normally unless overridden by custom rules.</li>
-  <li>Don’t forget to shout “UNO!” when you have one card left!</li>
+  <li>Match the top card by color or number.</li>
+  <li>If you can't play, draw one card. If it's playable, you may play it right away.</li>
+  <li>First to get rid of all cards wins. Don't forget to yell "UNO!" when you have one left.</li>
 </ul>
 
-<h2>6. Extra Cards & Packs Used</h2>
+<h2>6. Extra Packs Used</h2>
 <ul>
-  <li><strong>Swap Hands Pack:</strong> Includes cards that let players swap their hands mid-game.</li>
-  <li><strong>Reverse Pack:</strong> Includes Reverse +2 and other variants.</li>
-  <li><strong>UNO Show No Mercy (Select Cards Only):</strong> +6 and +10 cards are included.</li>
+  <li><strong>Swap Hands Pack</strong> — trade hands with another player when played.</li>
+  <li><strong>Reverse Pack</strong> — includes Reverse+2 and alternate Reverse rules.</li>
+  <li><strong>Show No Mercy</strong> — includes +6 and +10 cards from that set.</li>
 </ul>
 
-<h2>7. Flip Rules</h2>
-<p>This game uses the inverted side from UNO Flip Express as the “Dark Side.” When a Flip card is played, all players flip their hands and the pile. All teal cards are only usable on this side.</p>
+<h2>7. Flip Mode (Dark Side)</h2>
+<p>When a Flip card is played, everyone must flip their hand and use the "Dark Side" of the cards. The Teal Kulla is only playable while in Dark Side mode.</p>
 
 <h2>8. Custom Rules</h2>
-
-<h3>Color Hue Flow</h3>
-<p>You may play a card that is next to the previous color on the hue spectrum — either forward or backward:</p>
 <ul>
-  <li>Red → Orange → Yellow → Green → Teal → Blue → Purple → Pink → (back to Red)</li>
-</ul>
-<p>This means you may play a color-adjacent card instead of a perfect color or number match.</p>
-
-<h3>Teal Card Restriction (Two-Life System)</h3>
-<p>Teal cards may only be played when the game is on the Dark Side. Playing one on the Light Side breaks the rule. Each player has two “lives” for this:</p>
-<ul>
-  <li><strong>First mistake:</strong> Draw half a card (i.e., no penalty, just a warning).</li>
-  <li><strong>Second mistake:</strong> Draw half a card (i.e., draw one card).</li>
-  <li>After the second mistake, both lives reset and the next violation starts the cycle again.</li>
+  <li><strong>Hue Chain Rule:</strong> You may go forward or backward in hue:
+    <ul>
+      <li>Red → Orange → Yellow → Green → Teal → Blue → Purple → Pink → Red (looping)</li>
+    </ul>
+    If you're on Orange, you can play Red or Yellow even if they don't match number.
+  </li>
+  <li><strong>Teal Kulla Penalty System (2 lives):</strong>
+    <ul>
+      <li>If a player plays a teal card while not in Dark Side mode, it's a mistake.</li>
+      <li>First mistake: draw half a card (i.e., nothing).</li>
+      <li>Second mistake: draw half a card again (i.e., draw 1 card).</li>
+      <li>After two mistakes, lives reset. It loops each time.</li>
+    </ul>
+  </li>
 </ul>
 
 <h2>9. Winning</h2>
-<p>The first player to get rid of all their cards wins the round. Score based on other players’ remaining cards can be tracked optionally.</p>
+<p>First player to play all their cards wins. Optionally, calculate points based on what remains in others’ hands.</p>
 
 </body>
 </html>
