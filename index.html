@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background: #fdfdfd;
+      background: #ffffff; /* keeps white background */
       color: #222;
       margin: 40px;
       line-height: 1.6;
@@ -14,6 +14,22 @@
     h1, h2, h3 {
       color: #111;
     }
+
+    /* Gradient bar separating sections */
+    .section-bar {
+      height: 12px;
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 6px;
+      background: linear-gradient(
+        to right, 
+        #6a0dad,  /* Royal Purple / reddish pink hue */
+        #4169e1,  /* Royal Blue */
+        #3cb0a6   /* Grayish Teal */
+      );
+    }
+
+    /* Colors list */
     .colors-list {
       display: flex;
       flex-wrap: wrap;
@@ -45,13 +61,17 @@
     .darkgreen { background: #006400; }
     .darkyellow { background: #bfa500; color: #222; }
     .darkblue { background: #00008b; }
+
   </style>
 </head>
 <body>
   <h1>UNO Ultra Spectrum Rulebook</h1>
-  <p><strong>UNO: Ultra Spectrum</strong> is an expanded version of UNO and Full Spectrum, incorporating new colors, dark/light counterparts, DOS mechanics, custom cards, and crossover rules. The game is divided into progressive levels, so players can choose how complex they want gameplay to be.</p>
+  <p><strong>UNO: Ultra Spectrum</strong> is an expanded version of UNO and Full Spectrum, incorporating new colors, dark/light counterparts, DOS mechanics, custom cards, and crossover rules. Sections are visually separated with a gradient bar.</p>
+
+  <div class="section-bar"></div>
 
   <h2>1. Game Levels</h2>
+  <div class="section-bar"></div>
 
   <h3>Level 1: UNO Rules</h3>
   <ul>
@@ -59,12 +79,16 @@
     <li>Players are dealt 7 cards.</li>
   </ul>
 
+  <div class="section-bar"></div>
+
   <h3>Level 2: Full Spectrum Rules</h3>
   <ul>
     <li>Expanded light colors: Orange, Purple, Teal, Blossom Pink, Hot Pink, Light Green.</li>
     <li>Players are dealt 10 cards instead of 7 due to more colors.</li>
     <li>Swap Pack, Reverse Pack, and other official add-ons may be included.</li>
   </ul>
+
+  <div class="section-bar"></div>
 
   <h3>Level 3: Ultra Spectrum Light Rules</h3>
   <ul>
@@ -75,6 +99,8 @@
     </li>
     <li>Custom mistake system applies (see below).</li>
   </ul>
+
+  <div class="section-bar"></div>
 
   <h3>Level 4: Ultra Spectrum Dark Rules</h3>
   <ul>
@@ -89,6 +115,8 @@
       </ol>
     </li>
   </ul>
+
+  <div class="section-bar"></div>
 
   <h3>Level 5: Advanced Custom Rules</h3>
   <ul>
@@ -112,8 +140,10 @@
     </li>
   </ul>
 
-  <h2>2. All Colors</h2>
-  <p>The playable colors in Ultra Spectrum UNO are:</p>
+  <div class="section-bar"></div>
+
+  <h2>2. All Playable Card Colors</h2>
+  <p>The playable colors in Ultra Spectrum UNO:</p>
   <div class="colors-list">
     <!-- Light colors -->
     <span class="color-chip red">Red</span>
@@ -132,6 +162,8 @@
     <span class="color-chip darkyellow">Dark Yellow</span>
     <span class="color-chip darkblue">Dark Blue</span>
   </div>
+
+  <div class="section-bar"></div>
 
   <h2>3. Custom Mistake System</h2>
   <ul>
