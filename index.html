@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>UNO Ultra Spectrum Rulebook</title>
+  <title>UNO Ultra Spectrum Deluxe Rulebook</title>
   <style>
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background: #ffffff; /* keeps white background */
+      background: #ffffff;
       color: #222;
       margin: 40px;
       line-height: 1.6;
@@ -15,21 +15,24 @@
       color: #111;
     }
 
-    /* Gradient bar separating sections */
+    /* Gradient separator bar */
     .section-bar {
-      height: 12px;
+      height: 14px;
       width: 100%;
-      margin: 20px 0;
-      border-radius: 6px;
+      margin: 24px 0;
+      border-radius: 7px;
       background: linear-gradient(
         to right, 
-        #990024,  /* Royal Purple / reddish pink hue */
-        #4169e1,  /* Royal Blue */
-        #567b6f   /* Grayish Teal */
+        #990024,   /* Tyrian Purple */
+        #4169e1,   /* Royal Blue */
+        #567b6f,   /* Grayish Teal */
+        #228B22,   /* Forest Green */
+        #7FFF00,   /* Chartreuse */
+        #b3a369    /* Buff Yellow (stone-like) */
       );
     }
 
-    /* Colors list */
+    /* Colors list layout */
     .colors-list {
       display: flex;
       flex-wrap: wrap;
@@ -46,34 +49,31 @@
 
     /* Light colors */
     .red { background: #e60000; }
+    .orange { background: #ff8000; }
+    .yellow { background: #ffcc00; color: #222; }
     .green { background: #008000; }
     .lightgreen { background: #90ee90; color: #222; }
-    .yellow { background: #ffcc00; color: #222; }
+    .teal { background: #468784; } 
     .blue { background: #0066cc; }
-    .orange { background: #ff8000; }
-    .teal { background: #008080; }
-    .purple { background: #800080; }
+    .purple { background: #990024; } /* Tyrian purple */
     .pink { background: #ffb6c1; color: #222; }
     .hotpink { background: #ff69b4; }
 
     /* Dark colors */
     .darkred { background: #8b0000; }
-    .darkgreen { background: #006400; }
     .darkyellow { background: #bfa500; color: #222; }
+    .darkgreen { background: #006400; }
     .darkblue { background: #00008b; }
 
   </style>
 </head>
 <body>
-  <h1>UNO Ultra Spectrum Rulebook</h1>
-  <p><strong>UNO: Ultra Spectrum</strong> is an expanded version of UNO and Full Spectrum, incorporating new colors, dark/light counterparts, DOS mechanics, custom cards, and crossover rules. Sections are visually separated with a gradient bar.</p>
+  <h1>UNO Ultra Spectrum Deluxe Edition</h1>
+  <p><strong>UNO Ultra Spectrum Deluxe</strong> is a fork of UNO Full Spectrum. It expands gameplay with new colors, light/dark counterparts, custom cards, crossover rules from other UNO variants, and exclusive Deluxe mechanics.</p>
 
   <div class="section-bar"></div>
 
-  <h2>1. Game Levels</h2>
-  <div class="section-bar"></div>
-
-  <h3>Level 1: UNO Rules</h3>
+  <h2>Level 1: UNO Rules</h2>
   <ul>
     <li>Base game rules as published by Mattel.</li>
     <li>Players are dealt 7 cards.</li>
@@ -81,30 +81,26 @@
 
   <div class="section-bar"></div>
 
-  <h3>Level 2: Full Spectrum Rules</h3>
+  <h2>Level 2: Full Spectrum Rules</h2>
   <ul>
-    <li>Expanded light colors: Orange, Purple, Teal, Blossom Pink, Hot Pink, Light Green.</li>
+    <li>Expanded colors: Orange, Purple, Teal, Blossom Pink, Hot Pink, Light Green.</li>
     <li>Players are dealt 10 cards instead of 7 due to more colors.</li>
     <li>Swap Pack, Reverse Pack, and other official add-ons may be included.</li>
   </ul>
 
   <div class="section-bar"></div>
 
-  <h3>Level 3: Ultra Spectrum Light Rules</h3>
+  <h2>Level 3: Ultra Spectrum Light Rules</h2>
   <ul>
-    <li>Light color placement rules:
-      <ol>
-        <li>Light → Light matching.</li>
-      </ol>
-    </li>
+    <li>Light colors may only be played on other light colors of the same value or declared color.</li>
     <li>Custom mistake system applies (see below).</li>
   </ul>
 
   <div class="section-bar"></div>
 
-  <h3>Level 4: Ultra Spectrum Dark Rules</h3>
+  <h2>Level 4: Ultra Spectrum Dark Rules</h2>
   <ul>
-    <li>Introduces dark counterparts: Dark Red, Dark Green, Dark Yellow, Dark Blue.</li>
+    <li>Introduces dark counterparts: Dark Red, Dark Yellow, Dark Green, Dark Blue.</li>
     <li>Requires UNO Show No Mercy expansion (without coins).</li>
     <li>Placement rules:
       <ol>
@@ -118,56 +114,83 @@
 
   <div class="section-bar"></div>
 
-  <h3>Level 5: Advanced Custom Rules</h3>
+  <h2>Level 5: Advanced Custom Rules</h2>
   <ul>
-    <li>DOS Mechanics:
+    <li><strong>DOS Mechanics</strong>
       <ul>
-        <li>2-Wild Card: Choose <strong>two colors</strong> for next turn(s).</li>
-        <li>Skip Decision Option: Place a “2” card on top of any color instead of choosing colors.</li>
-        <li>Light/Dark Counterpart Rule: When choosing colors, light or dark may be selected. If a player plays the dark version of a chosen color, that dark color becomes active.</li>
+        <li>2-Wild Card: Choose two colors for play.</li>
+        <li>Skip Decision: Place a “2” card instead of declaring colors.</li>
+        <li>Counterparts: Dark/Light may be chosen together (e.g., Red + Dark Red).</li>
       </ul>
     </li>
-    <li>Infinity Card: Player who plays it loses immediately and picks up the entire deck.</li>
-    <li>-2 and -4 Cards: Remove that many cards from your hand instead of drawing.</li>
-    <li>LOCO Wheels Rule: Slap Six. Last player to slap draws 1 card.</li>
-    <li>UNO Infinity Cards (optional):
+    <li><strong>Infinity Card:</strong> Player loses instantly and takes the entire deck.</li>
+    <li><strong>-2 and -4 Cards:</strong> Remove that many cards from your hand.</li>
+    <li><strong>LOCO Wheels Rule:</strong> Slap Six – last player to slap draws 1 card.</li>
+    <li><strong>UNO Infinity Cards:</strong>
       <ul>
-        <li>+1 Card: Adds 1 card to a target player.</li>
-        <li>Targeted +2 Card: Choose a specific player to draw 2 cards.</li>
-        <li>Targeted Draw Four: Choose a specific player to draw 4 cards.</li>
-        <li>Targeted Draw One: Choose a specific player to draw 1 card.</li>
+        <li>+1 Card</li>
+        <li>Targeted +2</li>
+        <li>Targeted Draw Four</li>
+        <li>Targeted Draw One</li>
       </ul>
     </li>
   </ul>
 
   <div class="section-bar"></div>
 
-  <h2>2. All Playable Card Colors</h2>
-  <p>The playable colors in Ultra Spectrum UNO:</p>
+  <h2>Level 6: Deluxe Rules</h2>
+  <ul>
+    <li><strong>Liars UNO & House Rules UNO Variants:</strong> Red, Green, Yellow, and Blue gain Liars and House Rules versions.
+      <ul>
+        <li>If a Liars card is played face-down and proven false (or unrealistic), the player takes a penalty.</li>
+      </ul>
+    </li>
+    <li><strong>Draw 15 & Challenge (20):</strong> Draw 15 forces the next player to take 15 cards. If a Challenge card is played, it upgrades to 20.</li>
+    <li><strong>No Mercy Limit:</strong> Players are eliminated if they exceed 100 cards.</li>
+    <li><strong>ONO 99 Card:</strong>
+      <ul>
+        <li>Can be countered by a “9” of any color.</li>
+        <li>If used on a player with UNO, that player is eliminated by exceeding the card limit.</li>
+        <li>Draw 99 effect only activates when used on a UNO player.</li>
+      </ul>
+    </li>
+    <li><strong>The 10 Card (special, one per deck):</strong>
+      <ul>
+        <li>Acts as a normal 10, OR</li>
+        <li>Makes a player draw 10, OR</li>
+        <li>Skips two players, OR</li>
+        <li>Triggers a Wild Sequence (allowing chaining of special cards).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="section-bar"></div>
+
+  <h2>All Playable Card Colors (in order)</h2>
   <div class="colors-list">
-    <!-- Light colors -->
+    <!-- Light colors in order -->
     <span class="color-chip red">Red</span>
+    <span class="color-chip orange">Orange</span>
+    <span class="color-chip yellow">Yellow</span>
     <span class="color-chip green">Green</span>
     <span class="color-chip lightgreen">Light Green</span>
-    <span class="color-chip yellow">Yellow</span>
-    <span class="color-chip blue">Blue</span>
-    <span class="color-chip orange">Orange</span>
     <span class="color-chip teal">Teal</span>
+    <span class="color-chip blue">Blue</span>
     <span class="color-chip purple">Purple</span>
     <span class="color-chip pink">Blossom Pink</span>
     <span class="color-chip hotpink">Hot Pink</span>
-    <!-- Dark colors -->
+    <!-- Dark colors in order -->
     <span class="color-chip darkred">Dark Red</span>
-    <span class="color-chip darkgreen">Dark Green</span>
     <span class="color-chip darkyellow">Dark Yellow</span>
+    <span class="color-chip darkgreen">Dark Green</span>
     <span class="color-chip darkblue">Dark Blue</span>
   </div>
 
   <div class="section-bar"></div>
 
-  <h2>3. Custom Mistake System</h2>
+  <h2>Custom Mistake System</h2>
   <ul>
-    <li>First mistake: draw “half a card” (no penalty, warning only).</li>
+    <li>First mistake: draw “half a card” (warning only).</li>
     <li>Second mistake: draw 1 card.</li>
     <li>After two mistakes, lives reset.</li>
   </ul>
