@@ -1,159 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>UNO: Ultra Spectrum Rules</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background: #fefefe;
-      color: #2c2c2c;
+  <meta charset="UTF-8">
+  <title>UNO Ultra Spectrum Rulebook</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      margin: 40px;
       line-height: 1.6;
     }
-
-    h1, h2 {
-      color: #b22222;
-      margin-bottom: 0.3rem;
+    h1, h2, h3 {
+      color: #111;
     }
-
-    h1 {
-      border-bottom: 3px solid #b22222;
-      padding-bottom: 0.5rem;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.3rem;
-    }
-
-    ul {
-      margin-left: 1.2rem;
-    }
-
-    li {
-      margin: 0.3rem 0;
-    }
-
     .colors-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem 1rem;
-      margin: 0.3rem 0 1rem 0;
+      gap: 8px;
+      margin: 12px 0;
     }
-
     .color-chip {
-      padding: 0.3rem 0.8rem;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: white;
-      user-select: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+      color: #fff;
+      display: inline-block;
     }
 
-    .red { background: #e03c31; }
-    .orange { background: #f58220; }
-    .yellow { background: #f9d71c; color: #222; }
-    .green { background: #3a9a35; }
-    .teal { background: #009688; }
-    .blue { background: #1976d2; }
-    .purple { background: #7b1fa2; }
-    .pink { background: #d81b60; }
+    /* Light colors */
+    .red { background: #e60000; }
+    .green { background: #008000; }
+    .lightgreen { background: #90ee90; color: #222; }
+    .yellow { background: #ffcc00; color: #222; }
+    .blue { background: #0066cc; }
+    .orange { background: #ff8000; }
+    .teal { background: #008080; }
+    .purple { background: #800080; }
+    .pink { background: #ffb6c1; color: #222; }
+    .hotpink { background: #ff69b4; }
 
-    @media print {
-      * {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-      }
-
-      body {
-        background: white;
-        color: #2c2c2c;
-      }
-
-      .color-chip {
-        -webkit-print-color-adjust: exact !important;
-        color-adjust: exact !important;
-        box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
-      }
-    }
+    /* Dark colors */
+    .darkred { background: #8b0000; }
+    .darkgreen { background: #006400; }
+    .darkyellow { background: #bfa500; color: #222; }
+    .darkblue { background: #00008b; }
   </style>
 </head>
 <body>
+  <h1>UNO Ultra Spectrum Rulebook</h1>
+  <p><strong>UNO: Ultra Spectrum</strong> is an expanded version of UNO and Full Spectrum, incorporating new colors, dark/light counterparts, DOS mechanics, custom cards, and crossover rules. The game is divided into progressive levels, so players can choose how complex they want gameplay to be.</p>
 
-<h1>UNO: Ultra Spectrum</h1>
-<p><em>A fork of the UNO: Full Spectrum variant</em></p>
+  <h2>1. Game Levels</h2>
 
-<h2>1. Overview</h2>
-<p>UNO: Ultra Spectrum builds on the Full Spectrum fork by combining multiple decks and extra rules into one massive spectrum of colors. It includes many expansions and custom mechanics for a wild experience.</p>
+  <h3>Level 1: UNO Rules</h3>
+  <ul>
+    <li>Base game rules as published by Mattel.</li>
+    <li>Players are dealt 7 cards.</li>
+  </ul>
 
-<h2>2. Required Cards</h2>
-<ul>
-  <li>Standard UNO: Red, Yellow, Green, Blue</li>
-  <li>Full Spectrum: Orange, Purple (Neo), Pink (Susan), Teal (UNO Flip)</li>
-  <li>Extra packs: Swap Hands, Reverse Pack, Show No Mercy (+6, +10)</li>
-</ul>
+  <h3>Level 2: Full Spectrum Rules</h3>
+  <ul>
+    <li>Expanded light colors: Orange, Purple, Teal, Blossom Pink, Hot Pink, Light Green.</li>
+    <li>Players are dealt 10 cards instead of 7 due to more colors.</li>
+    <li>Swap Pack, Reverse Pack, and other official add-ons may be included.</li>
+  </ul>
 
-<h2>3. Starting the Game</h2>
-<ul>
-  <li>Each player is dealt <strong>10 cards</strong> instead of 7 due to the many colors.</li>
-  <li>One card from the draw pile starts the game. Match by color or number.</li>
-</ul>
+  <h3>Level 3: Ultra Spectrum Light Rules</h3>
+  <ul>
+    <li>Light color placement rules:
+      <ol>
+        <li>Light → Light matching.</li>
+      </ol>
+    </li>
+    <li>Custom mistake system applies (see below).</li>
+  </ul>
 
-<h2>4. All Colors</h2>
-<p>The playable colors in Ultra Spectrum UNO:</p>
-<div class="colors-list">
-  <span class="color-chip red">Red</span>
-  <span class="color-chip orange">Orange</span>
-  <span class="color-chip yellow">Yellow</span>
-  <span class="color-chip green">Green</span>
-  <span class="color-chip teal">Teal</span>
-  <span class="color-chip blue">Blue</span>
-  <span class="color-chip purple">Purple</span>
-  <span class="color-chip pink">Pink</span>
-</div>
+  <h3>Level 4: Ultra Spectrum Dark Rules</h3>
+  <ul>
+    <li>Introduces dark counterparts: Dark Red, Dark Green, Dark Yellow, Dark Blue.</li>
+    <li>Requires UNO Show No Mercy expansion (without coins).</li>
+    <li>Placement rules:
+      <ol>
+        <li>Light → Light</li>
+        <li>Dark → Dark</li>
+        <li>Dark → Light (only if same color counterpart)</li>
+        <li>Light → Dark (only if same color counterpart)</li>
+      </ol>
+    </li>
+  </ul>
 
-<h2>5. Standard UNO Rules</h2>
-<ul>
-  <li>Match the top card by color or number.</li>
-  <li>If you can't play, draw one card. If it's playable, you may play it right away.</li>
-  <li>First to get rid of all cards wins. Don't forget to yell "UNO!" when you have one left.</li>
-</ul>
+  <h3>Level 5: Advanced Custom Rules</h3>
+  <ul>
+    <li>DOS Mechanics:
+      <ul>
+        <li>2-Wild Card: Choose <strong>two colors</strong> for next turn(s).</li>
+        <li>Skip Decision Option: Place a “2” card on top of any color instead of choosing colors.</li>
+        <li>Light/Dark Counterpart Rule: When choosing colors, light or dark may be selected. If a player plays the dark version of a chosen color, that dark color becomes active.</li>
+      </ul>
+    </li>
+    <li>Infinity Card: Player who plays it loses immediately and picks up the entire deck.</li>
+    <li>-2 and -4 Cards: Remove that many cards from your hand instead of drawing.</li>
+    <li>LOCO Wheels Rule: Slap Six. Last player to slap draws 1 card.</li>
+    <li>UNO Infinity Cards (optional):
+      <ul>
+        <li>+1 Card: Adds 1 card to a target player.</li>
+        <li>Targeted +2 Card: Choose a specific player to draw 2 cards.</li>
+        <li>Targeted Draw Four: Choose a specific player to draw 4 cards.</li>
+        <li>Targeted Draw One: Choose a specific player to draw 1 card.</li>
+      </ul>
+    </li>
+  </ul>
 
-<h2>6. Extra Packs Used</h2>
-<ul>
-  <li><strong>Swap Hands Pack</strong> — trade hands with another player when played.</li>
-  <li><strong>Reverse Pack</strong> — includes Reverse+2 and alternate Reverse rules.</li>
-  <li><strong>Show No Mercy</strong> — includes +6 and +10 cards from that set.</li>
-</ul>
+  <h2>2. All Colors</h2>
+  <p>The playable colors in Ultra Spectrum UNO are:</p>
+  <div class="colors-list">
+    <!-- Light colors -->
+    <span class="color-chip red">Red</span>
+    <span class="color-chip green">Green</span>
+    <span class="color-chip lightgreen">Light Green</span>
+    <span class="color-chip yellow">Yellow</span>
+    <span class="color-chip blue">Blue</span>
+    <span class="color-chip orange">Orange</span>
+    <span class="color-chip teal">Teal</span>
+    <span class="color-chip purple">Purple</span>
+    <span class="color-chip pink">Blossom Pink</span>
+    <span class="color-chip hotpink">Hot Pink</span>
+    <!-- Dark colors -->
+    <span class="color-chip darkred">Dark Red</span>
+    <span class="color-chip darkgreen">Dark Green</span>
+    <span class="color-chip darkyellow">Dark Yellow</span>
+    <span class="color-chip darkblue">Dark Blue</span>
+  </div>
 
-<h2>7. Flip Mode (Dark Side)</h2>
-<p>When a Flip card is played, everyone must flip their hand and use the "Dark Side" of the cards. The Teal color is only playable while in Dark Side mode.</p>
-
-<h2>8. Custom Rules</h2>
-<ul>
-  <li><strong>Hue Chain Rule:</strong> You may go forward or backward in hue:
-    <ul>
-      <li>Red → Orange → Yellow → Green → Teal → Blue → Purple → Pink → Red (looping)</li>
-    </ul>
-    If you're on Orange, you can play Red or Yellow even if they don't match number.
-  </li>
-  <li><strong>Teal Color Penalty System (2 lives):</strong>
-    <ul>
-      <li>If a player plays a teal card while not in Dark Side mode, it's a mistake.</li>
-      <li>First mistake: draw half a card (i.e., no penalty, just a warning).</li>
-      <li>Second mistake: draw half a card again (i.e., draw 1 card).</li>
-      <li>After two mistakes, lives reset. It loops each time.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2>9. Winning</h2>
-<p>First player to play all their cards wins. Optionally, calculate points based on what remains in others’ hands.</p>
-
+  <h2>3. Custom Mistake System</h2>
+  <ul>
+    <li>First mistake: draw “half a card” (no penalty, warning only).</li>
+    <li>Second mistake: draw 1 card.</li>
+    <li>After two mistakes, lives reset.</li>
+  </ul>
 </body>
 </html>
